@@ -6,34 +6,34 @@ Worked examples showing input and full output.
 
 ### User Input
 
-> ฉากต่อสู้ในตรอกกลางคืน สองคนตีกัน ดูดิบๆ จริงๆ
+> ฉากเผชิญหน้าในตรอกกลางคืน สองคนปะทะกัน ดูดิบๆ จริงๆ
 
 ### Output
 
 **Duration:** 8 seconds
 
-**Scene:** A narrow wet alley at night. Two men fight at close range. The violence is scrappy and exhausting, not choreographed.
+**Scene:** A narrow wet alley at night. Two men confront each other at close range. The encounter is raw and exhausting, not choreographed.
 
 **Character A:** Male, late 20s, wearing a dark gray hoodie pulled back off his head, exposing short black hair. Jeans and scuffed white sneakers. Left sleeve is torn at the shoulder seam. Sweat visible on forehead.
 
-**Character B:** Male, early 30s, wearing a wrinkled black t-shirt and cargo pants. Heavier build. A cut above his right eyebrow is bleeding — a thin line of blood runs toward his cheekbone.
+**Character B:** Male, early 30s, wearing a wrinkled black t-shirt and cargo pants. Heavier build. A smudge of dirt across his right cheekbone. Breathing hard.
 
-**Action:** Character A shoves Character B against the alley wall. B absorbs the hit with his shoulder, then grabs A's hoodie collar and pulls him off-balance. A stumbles forward. B throws a short, ugly right hook that catches A on the jaw. A's head snaps to the side. He grabs the wall to stay upright. Both pause for half a second, breathing hard.
+**Action:** Character A shoves Character B against the alley wall with both hands. B absorbs the impact with his shoulder, then grabs A's hoodie collar and pulls him off-balance. A stumbles forward into the wall. B pins him there for a moment. A twists free and pushes B back. Both separate by a step, hands up, breathing hard. Neither commits to another move.
 
-**Performance:** No martial arts. The punches are short-range and sloppy. Both men are tired — movements are heavy, not fast. Breathing is audible. A winces when he hits the wall. B shakes out his punching hand — it hurt him too.
+**Performance:** No martial arts. The movements are short-range and sloppy. Both men are tired — movements are heavy, not fast. Breathing is audible. A winces when his shoulder hits the wall. B shakes out his gripping hand — it cramped from the grab.
 
-**Camera:** Handheld medium shot, eye level. The camera is close — roughly 2 meters from the fight. Slight handheld shake increases during impact moments. The camera does not circle or crane. It stays planted like a third person standing in the alley, flinching.
+**Camera:** Handheld medium shot, eye level. The camera is close — roughly 2 meters from the confrontation. Slight handheld shake increases during impact moments. The camera does not circle or crane. It stays planted like a third person standing in the alley, watching.
 
-**Lighting/Color:** A single sodium vapor streetlight at the far end of the alley casts orange-amber light. The near end is darker. Wet ground reflects the light in broken streaks. Faces are partially lit — key light from the left, deep shadow on the right. Desaturated palette except for the orange light and the red blood on B's face.
+**Lighting/Color:** A single sodium vapor streetlight at the far end of the alley casts orange-amber light. The near end is darker. Wet ground reflects the light in broken streaks. Faces are partially lit — key light from the left, deep shadow on the right. Desaturated palette except for the warm orange light.
 
-**Sound:** Scuffling shoes on wet ground. The hoodie fabric ripping slightly during the grab. The dull impact of the punch — not a movie crack, a muffled thud. Heavy breathing echoing off the alley walls.
+**Sound:** Scuffling shoes on wet ground. The hoodie fabric stretching during the grab. The dull thud of a body against brick. Heavy breathing echoing off the alley walls.
 
-**Continuity:** Both characters maintain their clothing damage throughout. The blood on B's eyebrow was there before this shot — it is not fresh. The wet ground is consistent. Screen direction: A enters from frame left, B is pushed frame right toward the wall.
+**Continuity:** Both characters maintain their clothing damage throughout. The dirt on B's face was there before this shot — it is not fresh. The wet ground is consistent. Screen direction: A enters from frame left, B is pushed frame right toward the wall.
 
 **Final Seedance Prompt:**
 
 ```text
-An 8-second handheld medium shot in a narrow wet alley at night. Two men fight at close range. A young man in a torn dark gray hoodie shoves a heavier man in a black t-shirt against the brick wall. The heavier man absorbs the hit, grabs the hoodie collar, and pulls him off-balance. He throws a short, ugly right hook that connects with the jaw. The young man's head snaps sideways and he grabs the wall to stay standing. Both pause, breathing hard, exhausted. The fight is sloppy and real — no martial arts, no acrobatics. A sodium vapor streetlight at the end of the alley casts orange light on wet ground. Faces are half-lit, half in shadow. The camera shakes slightly on impact. Wet footstep sounds and a muffled punch thud echo in the alley.
+An 8-second handheld medium shot in a narrow wet alley at night. Two men confront each other at close range. A young man in a torn dark gray hoodie shoves a heavier man in a black t-shirt against the brick wall. The heavier man absorbs the impact, grabs the hoodie collar, and pulls him off-balance. The young man stumbles into the wall. He twists free and pushes back. Both separate by a step, hands raised, breathing hard, exhausted. The confrontation is raw and scrappy — no martial arts, no acrobatics. A sodium vapor streetlight at the end of the alley casts orange light on wet ground. Faces are half-lit, half in shadow. The camera shakes slightly on impact. Wet footstep sounds and a dull thud of body against brick echo in the alley.
 ```
 
 ---

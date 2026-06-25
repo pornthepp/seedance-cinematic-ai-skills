@@ -15,15 +15,34 @@ Specify only controls that matter:
 - Sound or audio cue if relevant.
 - Reference image/video/audio usage.
 
-## Anti-Slop Rules
+## Anti-Slop Reference Table
 
-Replace vague words with concrete film direction:
+The core principle — direct the scene, don't decorate it — is enforced throughout every workflow and module. This table is the detailed lookup for specific replacements.
 
-- "cinematic" -> shot size, lens feeling, light, movement.
-- "dramatic" -> visible behavior and stakes.
-- "beautiful" -> material, color, texture, light.
-- "emotional" -> breath, posture, hesitation, gaze, action.
-- "dynamic" -> camera path, screen direction, rhythm.
+### Banned Phrases → Concrete Replacements
+
+| Banned | Why It Fails | Replace With |
+|---|---|---|
+| "cinematic" | Not a visual instruction | Shot size + lens feel + light direction + movement |
+| "cinematic masterpiece" | Pure decoration | (delete entirely) |
+| "dramatic" | No visible meaning | Visible stakes: what the character does, what is at risk |
+| "beautiful" | Subjective, not generatable | Material + color + texture + light behavior on surface |
+| "emotional" | Internal state, not visible | Breath pattern + posture shift + gaze direction + hesitation |
+| "dynamic" | Vague energy word | Camera path + screen direction + rhythm of cuts |
+| "epic" | Scale without specifics | Frame size + environment scale + character position in frame |
+| "stunning" | Decoration | (delete entirely) |
+| "ultra-realistic" | Not a generation parameter | Specific texture, skin detail, environmental detail |
+| "4K HDR" | Resolution tags do nothing | (delete entirely) |
+| "masterful" | Decoration | (delete entirely) |
+| "breathtaking" | Decoration | (delete entirely) |
+
+### The Test
+
+For every adjective or adverb in the prompt, ask: **"Can the model draw this?"**
+
+- "She walks sadly" → NO. Replace with: "She walks with her shoulders dropped, eyes on the ground, each step slower than the last."
+- "Beautiful sunset" → NO. Replace with: "The sun sits two fingers above the horizon, casting long amber light. The sky grades from deep orange near the sun to dark purple overhead."
+- "Dramatic lighting" → NO. Replace with: "A single hard light source from the upper left casts a sharp shadow across the right side of his face. The rest of the room is dark."
 
 ## Safety And IP
 
@@ -36,16 +55,24 @@ Replace vague words with concrete film direction:
 ## Final Prompt Template
 
 ```text
-A [duration]-second [shot size] of [original character/subject] in [location/time]. [One clear action beat]. The performance shows [specific visible behavior]. The camera [movement and angle], with [composition]. Lighting is [specific source and color]. Sound includes [audio cue]. Maintain continuity: [anchors].
+A [duration]-second [shot size] of [original character/subject] in [location/time].
+[One clear action beat]. The performance shows [specific visible behavior].
+The camera [movement and angle], with [composition].
+Lighting is [specific source and color]. Sound includes [audio cue].
+Maintain continuity: [anchors].
 ```
 
 ## Review Checklist
 
-- One main action beat.
-- Character is original and consistent.
-- Camera is concrete.
-- Movement is physically possible.
-- Environment supports the action.
-- Audio cue is useful, not decorative.
-- No overloaded adjectives.
-- No celebrity or copyrighted character dependency.
+Before submitting any prompt, verify:
+
+- [ ] One main action beat — not two, not three.
+- [ ] Character is original and described consistently with prior shots.
+- [ ] Camera is concrete: shot size + angle + movement specified.
+- [ ] Movement is physically possible within the stated duration.
+- [ ] Environment supports the action and is described beyond just the visible frame.
+- [ ] Audio cue is useful, not decorative.
+- [ ] **Zero vague adjectives remain** — no "cinematic," "dramatic," "beautiful," "epic," "stunning."
+- [ ] No celebrity or copyrighted character dependency.
+- [ ] Every descriptor answers the question: "Can the model draw this?"
+

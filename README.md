@@ -15,7 +15,7 @@ A set of creative-direction skills that help AI agents work on cinematic project
 | `cinematic-color-look-development` | Color palettes, look development, lighting logic, color grading notes |
 | `cinematic-music-soundscape-design` | Music direction, sound effects, silence, ambience planning |
 | `short-film-artistic-narrative-analysis` | Short film script critique, story structure, festival prep |
-| `seedance-cinematic-prompt-director` | Writing video prompts for Seedance 2.0 — action clips, storyboard sequences |
+| `seedance-cinematic-prompt-director` | Writing video prompts for Seedance 2.0 — action clips, storyboard sequences, commercials, music videos, educational content, with strict anti-slop quality enforcement |
 | `modern-acting-performance-mastery` | Actor direction, emotional beats, dialogue delivery, body/voice choices |
 | `ethical-character-representation` | Checking characters for stereotypes, bias, agency, and cultural specificity |
 
@@ -69,7 +69,7 @@ Not every skill has every reference type. Here's what's available:
 | Color | look-development-guide | 3 examples | — | grading mistakes, DI workflow, transition theory |
 | Sound | soundscape-guide | 3 examples | — | frequency map, silence types, spotting mistakes |
 | Short Film | short-film-analysis-guide | 3 examples | — | pressure cooker model, ending taxonomy, festival heuristics |
-| Seedance | storyboard-workflow, scene-modules, technical-and-safety | 3 examples | duration sweet spots, motion types, camera limits, artifacts | — |
+| Seedance | storyboard-workflow, scene-modules (action, chase, horror, romance, dialogue, product, commercial, music video, educational), technical-and-safety | 3 examples | duration sweet spots, motion types, camera limits, artifacts | — |
 | Acting | acting-methods-index, performance-direction-guide | 3 examples | — | AI direction failures, mask/leak, status transactions |
 | Ethics | representation-review-guide (with scoring rubric + genre checklists) | 3 examples | — | — |
 
@@ -86,7 +86,8 @@ Copy the skill folders you need into your AI agent's skill directory, or use thi
 ## Key Design Decisions
 
 - **GPT Image 2 skill** is for writing text prompts only — no API code, no Stable Diffusion syntax, no Midjourney parameters. Those tools have their own syntax that shouldn't be mixed in.
-- **Seedance skill** covers Seedance 2.0 specifically — including which durations work best, what types of motion are reliable, and what camera moves to avoid.
+- **Seedance skill** covers Seedance 2.0 specifically — including which durations work best, what types of motion are reliable, what camera moves to avoid, and a strict "Direct the scene, don't decorate it" anti-slop system that bans vague words like "cinematic" or "dramatic" and forces concrete film direction instead.
+- **Seedance scene modules** include templates for action, chase, horror, romance, dialogue, product, commercial & product promo, music video with rhythm sync, and educational & explainer content.
 - **Ethics skill** includes a 1-5 scoring rubric and genre-specific red flag checklists (action, horror, romance, sci-fi, drama) — not just generic "be inclusive" advice.
 - **Worked examples** in every skill show real input → output transformations, so you can see exactly what the skill produces.
 - **Model quirks** files document behaviors specific to GPT Image 2 and Seedance 2.0 that you won't find in general prompt-writing guides.
