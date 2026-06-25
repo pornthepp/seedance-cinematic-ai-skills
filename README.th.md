@@ -1,0 +1,92 @@
+# ชุดสกิลงานภาพยนตร์
+
+ภาษา: [English](README.md) | **ไทย**
+
+ชุดสกิลที่ช่วยให้ AI agent ทำงานสร้างสรรค์ด้านภาพยนตร์ได้ดีขึ้น — ตั้งแต่เขียน prompt รูปภาพ กำกับการแสดง ออกแบบสี วางแผนเสียง ไปจนถึงวิเคราะห์หนังสั้น แต่ละสกิลเป็น workflow สั้นๆ ที่ agent โหลดเฉพาะตอนที่ต้องใช้
+
+## มีอะไรบ้าง
+
+**8 สกิล** ครอบคลุมงานสร้างสรรค์ด้านหนังหลักๆ:
+
+| สกิล | ช่วยเรื่อง |
+|---|---|
+| `cinematic-camera-composition-director` | มุมกล้อง ขนาดช็อต เลือกเลนส์ สตอรี่บอร์ด จัดเฟรม |
+| `gpt-image-2-photoreal-synthesis` | เขียน prompt ให้ GPT Image 2 สร้างภาพสมจริง — สินค้า พอร์ตเทรต ตัวอักษร |
+| `cinematic-color-look-development` | จานสี ออกแบบลุค ตรรกะแสง/สี โน้ตเกรดสี |
+| `cinematic-music-soundscape-design` | กำกับดนตรี เอฟเฟกต์เสียง ความเงียบ วางแผนบรรยากาศเสียง |
+| `short-film-artistic-narrative-analysis` | วิจารณ์บทหนังสั้น โครงสร้างเรื่อง เตรียมส่งเทศกาล |
+| `seedance-cinematic-prompt-director` | เขียน prompt วิดีโอสำหรับ Seedance 2.0 — คลิปแอ็กชัน สตอรี่บอร์ด |
+| `modern-acting-performance-mastery` | กำกับนักแสดง จังหวะอารมณ์ พูดบท ภาษากาย |
+| `ethical-character-representation` | เช็คตัวละครว่ามี stereotype, อคติ, หรือปัญหาการนำเสนอไหม |
+
+**3 ไฟล์ routing** ที่ช่วย agent เลือกสกิลที่ถูกต้อง:
+
+- `SKILL_INDEX.md` — ดูว่างานแบบนี้ใช้สกิลไหน
+- `PREFLIGHT_ROUTER.md` — ช่วยจัดการเวลาคำขอกว้างๆ เช่น "ทำให้ดูเป็นหนัง"
+- `EVAL_PROMPTS.md` — prompt ทดสอบว่า router ทำงานถูกไหม
+
+## ทำงานยังไง
+
+```mermaid
+flowchart LR
+    A[คำขอจาก user] --> B{ชัดเจนหรือกว้าง?}
+    B -- ชัดเจน --> C[SKILL_INDEX.md\nเลือกสกิลที่ตรง]
+    B -- กว้าง --> D[PREFLIGHT_ROUTER.md\nถามหนึ่งคำถามก่อน]
+    D --> C
+    C --> E[โหลด SKILL.md\nทำตาม workflow]
+    E --> F{ต้องการลึกกว่านี้?}
+    F -- ใช่ --> G[เปิด reference ที่ต้องการ]
+    F -- ไม่ --> H[ส่ง output]
+    G --> H
+```
+
+1. คำขอเข้ามา
+2. ถ้ารู้ชัดว่าใช้สกิลไหน → ไป `SKILL_INDEX.md` เลือกเลย
+3. ถ้ากว้างๆ → ใช้ `PREFLIGHT_ROUTER.md` ช่วย — ถามอย่างมากหนึ่งคำถาม
+4. โหลด `SKILL.md` ของสกิลนั้น ทำตาม workflow
+5. ถ้าต้องการลึกกว่านี้ ค่อยเปิด reference เฉพาะที่ต้องใช้ — ไม่โหลดทุกอย่างพร้อมกัน
+
+## ในแต่ละโฟลเดอร์สกิลมีอะไร
+
+ทุกสกิลมีโครงสร้างเหมือนกัน:
+
+```text
+ชื่อสกิล/
+  SKILL.md              ← เริ่มที่นี่ workflow สั้นๆ + เช็คคุณภาพ
+  references/
+    core-guide.md       ← คำศัพท์ เช็คลิสต์ ตารางรีวิว
+    examples.md         ← ตัวอย่างจริง input → output เต็มๆ
+    model-quirks.md     ← เคล็ดลับเฉพาะรุ่น (GPT Image 2 / Seedance เท่านั้น)
+    advanced-techniques.md  ← เทคนิคขั้นสูงระดับมืออาชีพ
+```
+
+ไม่ใช่ทุกสกิลจะมีทุกประเภท นี่คือรายละเอียด:
+
+| สกิล | Core Guide | ตัวอย่าง | เฉพาะรุ่น | ขั้นสูง |
+|---|---|---|---|---|
+| กล้อง | shot-composition-guide, camera-workflow | 3 ตัวอย่าง | — | แก้ปัญหา shot sequence, จิตวิทยาเลนส์, blocking |
+| GPT Image 2 | photoreal-prompt-framework, visual-refinement-loop | 3 ตัวอย่าง | typography, multi-turn editing, artifacts ที่พบบ่อย | — |
+| สี | look-development-guide | 3 ตัวอย่าง | — | ข้อผิดพลาดในการเกรดสี, DI workflow, ทฤษฎีสีข้ามฉาก |
+| เสียง | soundscape-guide | 3 ตัวอย่าง | — | แผนที่ความถี่, ประเภทความเงียบ, spotting mistakes |
+| หนังสั้น | short-film-analysis-guide | 3 ตัวอย่าง | — | โมเดลหม้อความดัน, ประเภท ending, เทศกาลมองหาอะไร |
+| Seedance | storyboard-workflow, scene-modules, technical-and-safety | 3 ตัวอย่าง | ความยาวที่เหมาะสม, motion อะไรทำได้ดี/ไม่ดี, ข้อจำกัดกล้อง | — |
+| การแสดง | acting-methods-index, performance-direction-guide | 3 ตัวอย่าง | — | ปัญหาเวลา AI กำกับ, mask/leak, status transactions |
+| ตัวละคร | representation-review-guide (มี rubric + เช็คลิสต์ตามแนว) | 3 ตัวอย่าง | — | — |
+
+## เริ่มใช้ยังไง
+
+**ถ้าคุณเป็น AI agent:** อ่าน `SKILL_INDEX.md` ก่อน มันบอกว่าควรใช้สกิลไหนสำหรับงานแต่ละแบบ เปิด reference เฉพาะตอนที่จำเป็น
+
+**ถ้าคุณเป็นคน:** เปิด `SKILL.md` ของสกิลไหนก็ได้ ใช้เป็นเช็คลิสต์สั้นๆ ได้เลย ถ้าอยากดูตัวอย่างจริงๆ ไปที่ `references/examples.md`
+
+## ติดตั้ง
+
+คัดลอกโฟลเดอร์สกิลที่ต้องการไปไว้ใน skill directory ของ AI agent ที่ใช้ หรือจะใช้ทั้ง repo เป็นชุด reference ก็ได้
+
+## ทำไมถึงออกแบบแบบนี้
+
+- **สกิล GPT Image 2** มีไว้เขียน prompt ข้อความอย่างเดียว — ไม่มีโค้ด API, ไม่ปนคำสั่งของ Stable Diffusion หรือ Midjourney เพราะเครื่องมือพวกนั้นมี syntax ของตัวเอง
+- **สกิล Seedance** ออกแบบเฉพาะสำหรับ Seedance 2.0 — บอกว่าความยาวเท่าไหร่ดีที่สุด, motion แบบไหนทำได้ดี/แย่, กล้องแบบไหนควรหลีกเลี่ยง
+- **สกิลตัวละคร** ไม่ได้แค่บอกว่า "ระวัง stereotype" แต่มี rubric ให้คะแนน 1-5 และเช็คลิสต์เฉพาะแนวหนัง (แอ็กชัน, สยองขวัญ, รัก, ไซไฟ, ดราม่า)
+- **ตัวอย่างจริง** ทุกสกิลมีตัวอย่างเต็มๆ input → output ให้ดูว่าสกิลสร้าง output ออกมาเป็นยังไง
+- **เคล็ดลับเฉพาะรุ่น** มีข้อมูลพฤติกรรมเฉพาะของ GPT Image 2 และ Seedance 2.0 ที่หาไม่ได้จากคู่มือเขียน prompt ทั่วไป
