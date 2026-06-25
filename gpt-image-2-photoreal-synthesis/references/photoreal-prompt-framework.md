@@ -72,6 +72,9 @@ Create a photoreal image with the exact text "[TEXT]" printed on [surface]. The 
 
 ## Avoid
 
+- **Abstract Art Style / Filtering Terms:** Avoid terms like "heavy color grade," "dramatic/dark aesthetic," "moody," or named artistic styles (e.g., "Yinshan Tomb Guardian visual language") directly in the positive prompt. They trigger generic, flat AI filters instead of realistic generation. Instead, describe the physical properties that create that style: light source, direction, depth layering, shadows, and surface textures.
+- **Negative Prompt Clutter in Main Prompts:** Do not put long lists of what *not* to do (e.g., "no bright clean fantasy, no Angkor Wat, no Khmer temple, no watermarks, no male character") inside the descriptive body of the prompt. Modern models get confused and tend to draw the forbidden items or produce low-quality "AI-looking" outputs. Put a simple, short strict adherence clause at the end: "Follow these visual requirements exactly. Do not add extra characters, props, or fantasy elements." For character attributes, describe them *positively* (e.g., "visibly a young woman") rather than negatively (e.g., "never a male character").
+- **Abstract or Contradictory Camera/Lighting Instructions:** Do not use vague motion verbs for static images (e.g., "tiny push-in feeling") or contradictory focus instructions (e.g., "their hands form the sharp mid-ground focal point" when faces are also in the frame). Instead, use clear, industry-standard camera blocking (e.g., "over-the-shoulder framing," "camera slightly above shoulder height").
 - Long negative prompt lists from Stable Diffusion syntax.
 - Weighted negative syntax from Stable Diffusion unless the user's tool
   explicitly supports it.

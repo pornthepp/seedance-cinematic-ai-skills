@@ -39,6 +39,9 @@ specific replacements.
 | "breathtaking"          | Decoration                  | (delete entirely)                                            |
 | "studio lighting"       | Fake artificial look        | Practical light from a specific in-scene source (window/lamp)|
 | "beauty light"          | Unmotivated flat lighting   | Hard/soft light from a motivated physical direction          |
+| "aesthetic / style tags" | Triggers flat AI filters     | Concrete physical properties (lighting direction, depth layers, texture detail)|
+| "heavy color grade"     | Fights the natural lighting | Specific light color temperature + wet reflection details    |
+| "no / never / do not"   | Confuses attention weights  | Describe characters positively; use a short Strict Adherence Clause at the end|
 
 ### The Test
 
@@ -86,4 +89,7 @@ Before submitting any prompt, verify:
 - [ ] **Zero vague adjectives remain** — no "cinematic," "dramatic,"
       "beautiful," "epic," "stunning."
 - [ ] No celebrity or copyrighted character dependency.
+- [ ] **No negative clutter in prompt body** — do not use "no," "never," "not" to exclude elements. Use positive descriptions (e.g., "visibly a woman") and place a standard Strict Adherence Clause at the end.
+- [ ] **No abstract style tags or grading names** — broken down into light sources, shadow directions, and surface reflections.
+- [ ] **Camera blocking is physically plausible** — uses standard camera terminology (e.g., "over-the-shoulder framing").
 - [ ] Every descriptor answers the question: "Can the model draw this?"
