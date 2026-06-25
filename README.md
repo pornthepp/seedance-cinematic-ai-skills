@@ -27,18 +27,7 @@ A set of creative-direction skills that help AI agents work on cinematic project
 
 ## How It Works
 
-```mermaid
-flowchart LR
-    A[User Request] --> B{Clear or Vague?}
-    B -- Clear --> C[SKILL_INDEX.md\nPick the right skill]
-    B -- Vague --> D[PREFLIGHT_ROUTER.md\nAsk one question first]
-    D --> C
-    C --> E[Load SKILL.md\nFollow the workflow]
-    E --> F{Need more depth?}
-    F -- Yes --> G[Open a reference file]
-    F -- No --> H[Deliver Output]
-    G --> H
-```
+
 
 1. A request comes in.
 2. If it's clear what skill to use, go straight to `SKILL_INDEX.md` and pick one.
