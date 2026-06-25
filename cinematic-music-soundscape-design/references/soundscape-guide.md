@@ -30,8 +30,8 @@ Use this for cue planning, sound palettes, and deeper audio review.
 ## Cue Sheet
 
 | Cue | Time / Trigger | Function | Palette | Motion | Exit |
-|---|---:|---|---|---|---|
-|  |  |  |  |  |  |
+| --- | -------------: | -------- | ------- | ------ | ---- |
+|     |                |          |         |        |      |
 
 ## Mix Notes
 

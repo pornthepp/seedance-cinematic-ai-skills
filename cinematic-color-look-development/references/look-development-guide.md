@@ -4,7 +4,8 @@ Use this when color needs more than a quick palette.
 
 ## Palette Logic
 
-- Realist: color follows location, practical lights, weather, and production design.
+- Realist: color follows location, practical lights, weather, and production
+  design.
 - Expressionist: color reveals emotion more than literal realism.
 - Symbolic: color carries theme, memory, guilt, desire, danger, or belonging.
 - Arc-based: color changes as the character or story changes.
@@ -39,10 +40,10 @@ Define:
 
 ## Review Table
 
-| Area | Current Choice | Story Function | Risk | Upgrade |
-|---|---|---|---|---|
-| Palette |  |  |  |  |
-| Lighting |  |  |  |  |
-| Skin tone |  |  |  |  |
-| Continuity |  |  |  |  |
-| Grade |  |  |  |  |
+| Area       | Current Choice | Story Function | Risk | Upgrade |
+| ---------- | -------------- | -------------- | ---- | ------- |
+| Palette    |                |                |      |         |
+| Lighting   |                |                |      |         |
+| Skin tone  |                |                |      |         |
+| Continuity |                |                |      |         |
+| Grade      |                |                |      |         |

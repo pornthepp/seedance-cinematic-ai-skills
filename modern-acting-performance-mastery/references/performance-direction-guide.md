@@ -1,6 +1,7 @@
 # Performance Direction Guide
 
-Use this for directing actors, rewriting performance beats, or creating acting notes.
+Use this for directing actors, rewriting performance beats, or creating acting
+notes.
 
 ## Beat Work
 

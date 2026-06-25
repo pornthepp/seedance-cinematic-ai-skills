@@ -23,11 +23,13 @@ Use when a scene feels planned, stiff, or disconnected from the partner.
 
 Best for inner life, sensory recall, and psychological intensity.
 
-Use carefully. Do not force trauma mining. Prefer sense memory and imaginative substitution when safer.
+Use carefully. Do not force trauma mining. Prefer sense memory and imaginative
+substitution when safer.
 
 ## Stella Adler
 
-Best for imagination, social world, scale, and character circumstances beyond the actor's personal memory.
+Best for imagination, social world, scale, and character circumstances beyond
+the actor's personal memory.
 
 Use when the role lives in a world far from the actor's experience.
 

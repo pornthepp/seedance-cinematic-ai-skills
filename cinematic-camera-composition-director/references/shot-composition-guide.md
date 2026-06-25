@@ -38,9 +38,11 @@ Use this only when exact shot vocabulary or composition choices are needed.
 - Center framing: ritual, confrontation, symmetry, deadpan, power.
 - Leading lines: direct attention and imply movement.
 - Negative space: loneliness, threat, anticipation, imbalance.
-- Foreground/midground/background: depth, secrecy, surveillance, layered conflict.
+- Foreground/midground/background: depth, secrecy, surveillance, layered
+  conflict.
 - Frame within frame: entrapment, observation, distance.
-- Screen direction: preserve left-to-right or right-to-left movement unless confusion is intended.
+- Screen direction: preserve left-to-right or right-to-left movement unless
+  confusion is intended.
 
 ## Lens Feeling
 

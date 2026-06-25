@@ -15,7 +15,9 @@ Include:
 - Screen direction.
 - What the camera tracks.
 
-Avoid endless combos, teleporting bodies, impact without reaction, and decoration: not "epic battle" — describe the physical path of each strike and its consequence.
+Avoid endless combos, teleporting bodies, impact without reaction, and
+decoration: not "epic battle" — describe the physical path of each strike and
+its consequence.
 
 ## Chase
 
@@ -27,7 +29,8 @@ Include:
 - Camera relation to bodies.
 - Breath, footfalls, impacts, and environmental sound.
 
-Avoid: not "thrilling chase" or "heart-pounding" — describe the distance closing, the breathing getting ragged, the obstacle that almost stops them.
+Avoid: not "thrilling chase" or "heart-pounding" — describe the distance
+closing, the breathing getting ragged, the obstacle that almost stops them.
 
 ## Horror or Suspense
 
@@ -38,7 +41,9 @@ Include:
 - Camera restriction: locked, slow push, handheld, blocked view.
 - Character behavior before fear becomes obvious.
 
-Avoid: not "terrifying" or "creepy atmosphere" — describe what is hidden, what sound breaks the silence, and what the character's body does before fear shows on their face.
+Avoid: not "terrifying" or "creepy atmosphere" — describe what is hidden, what
+sound breaks the silence, and what the character's body does before fear shows
+on their face.
 
 ## Romance or Intimacy
 
@@ -49,7 +54,9 @@ Include:
 - What remains unsaid.
 - Soft or restrained camera movement.
 
-Avoid: not "passionate" or "beautiful moment" — describe the exact distance between their hands, the breath held half a second too long, the eye contact that breaks first.
+Avoid: not "passionate" or "beautiful moment" — describe the exact distance
+between their hands, the breath held half a second too long, the eye contact
+that breaks first.
 
 ## Dialogue
 
@@ -60,7 +67,8 @@ Include:
 - Blocking and eyeline.
 - Subtext in performance, not long dialogue.
 
-Avoid: not "powerful dialogue" or "emotional conversation" — show the single moment where the listener's face changes. That is the scene.
+Avoid: not "powerful dialogue" or "emotional conversation" — show the single
+moment where the listener's face changes. That is the scene.
 
 ## Product or Fashion
 
@@ -71,11 +79,13 @@ Include:
 - Light behavior on material.
 - Clean background logic.
 
-Avoid: not "elegant" or "premium quality" — describe the material surface, the way light bends on the edge, the motion that reveals scale.
+Avoid: not "elegant" or "premium quality" — describe the material surface, the
+way light bends on the edge, the motion that reveals scale.
 
 ## Commercial & Product Promo
 
-Use this for advertising clips, brand videos, product launches, and promotional content.
+Use this for advertising clips, brand videos, product launches, and promotional
+content.
 
 Structure:
 
@@ -95,12 +105,12 @@ CTA:             (call-to-action moment — what the viewer should feel/do at th
 
 ### Commercial Beat Patterns
 
-| Pattern | Structure | Best For |
-|---|---|---|
-| Reveal | Dark/empty → product enters → hero light → hold | Luxury, tech, premium |
-| Lifestyle | Person using product → reaction → product close-up | Food, cosmetics, fitness |
-| Transformation | Before state → product interaction → after state | Cleaning, beauty, tools |
-| Montage | Multiple quick angles of product → hero shot | Fashion, accessories |
+| Pattern        | Structure                                          | Best For                 |
+| -------------- | -------------------------------------------------- | ------------------------ |
+| Reveal         | Dark/empty → product enters → hero light → hold    | Luxury, tech, premium    |
+| Lifestyle      | Person using product → reaction → product close-up | Food, cosmetics, fitness |
+| Transformation | Before state → product interaction → after state   | Cleaning, beauty, tools  |
+| Montage        | Multiple quick angles of product → hero shot       | Fashion, accessories     |
 
 ### Commercial Anti-Slop
 
@@ -108,7 +118,8 @@ These words are especially common and especially useless in commercial prompts:
 
 - "premium quality" → describe the material and light behavior on the surface.
 - "innovative design" → show the design feature in motion.
-- "luxury feel" → specify: slow camera, dark background, rim light on edges, matte surface.
+- "luxury feel" → specify: slow camera, dark background, rim light on edges,
+  matte surface.
 
 ## Music Video — Rhythm Sync
 
@@ -117,7 +128,8 @@ Use this for performance clips, dance sequences, and audio-synced visuals.
 Include:
 
 - Performance energy and intensity level.
-- Rhythm of cuts or movement — sync to audio beat if audio reference is provided.
+- Rhythm of cuts or movement — sync to audio beat if audio reference is
+  provided.
 - Color and light motif that repeats across shots.
 - Repeated gesture, prop, or visual hook.
 
@@ -143,7 +155,8 @@ Lighting Sync:       (does lighting change with energy? e.g., warm verse → coo
 
 ## Educational & Explainer
 
-Use this for instructional content, how-to demonstrations, tutorials, product walkthroughs, and informational videos.
+Use this for instructional content, how-to demonstrations, tutorials, product
+walkthroughs, and informational videos.
 
 Structure:
 
@@ -164,14 +177,19 @@ Pacing:              (slow enough for comprehension — no fast cuts)
 ### Educational Principles
 
 1. **One concept per clip.** If you need to show three steps, make three clips.
-2. **Clarity over beauty.** Even lighting, clear framing, no distracting backgrounds. If the viewer cannot see the key visual clearly, the clip fails.
-3. **Leave space for text.** Educational content often needs on-screen labels, arrows, or captions. Describe a "clean zone" in the frame where text can be overlaid.
-4. **Consistent framing across a series.** If this is one step in a sequence, maintain the same camera angle, distance, and lighting for all steps.
-5. **Show the result.** End each clip with a brief hold on the completed state so the viewer can confirm understanding.
+2. **Clarity over beauty.** Even lighting, clear framing, no distracting
+   backgrounds. If the viewer cannot see the key visual clearly, the clip fails.
+3. **Leave space for text.** Educational content often needs on-screen labels,
+   arrows, or captions. Describe a "clean zone" in the frame where text can be
+   overlaid.
+4. **Consistent framing across a series.** If this is one step in a sequence,
+   maintain the same camera angle, distance, and lighting for all steps.
+5. **Show the result.** End each clip with a brief hold on the completed state
+   so the viewer can confirm understanding.
 
 ### Educational Anti-Slop
 
 - "easy to understand" → (delete — clarity comes from framing, not adjectives)
 - "professional quality" → (delete — describe the actual setup)
-- "engaging and dynamic" → specify: what moves, what stays still, where the eye goes
-
+- "engaging and dynamic" → specify: what moves, what stays still, where the eye
+  goes

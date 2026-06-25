@@ -6,7 +6,9 @@ Worked examples showing input and full output.
 
 ### User Input
 
-> I need a GPT Image 2 prompt for a Thai craft coffee brand. The product is a 250g matte black bag with gold foil text "DOI CHANG" on it. Premium feel, clean studio look.
+> I need a GPT Image 2 prompt for a Thai craft coffee brand. The product is a
+> 250g matte black bag with gold foil text "DOI CHANG" on it. Premium feel,
+> clean studio look.
 
 ### Output
 
@@ -18,9 +20,13 @@ Photoreal studio product image of a 250-gram matte black coffee bag standing upr
 
 **Risk notes:**
 
-- Typography is the highest-risk element. "DOI CHANG" is short (two words) which helps reliability. Requesting it once with exact placement reduces duplication risk.
-- Gold foil on matte black is a high-contrast combination that tends to render well.
-- The strict adherence clause at the end prevents the model from adding unwanted props like coffee cups, leaves, or burlap textures.
+- Typography is the highest-risk element. "DOI CHANG" is short (two words) which
+  helps reliability. Requesting it once with exact placement reduces duplication
+  risk.
+- Gold foil on matte black is a high-contrast combination that tends to render
+  well.
+- The strict adherence clause at the end prevents the model from adding unwanted
+  props like coffee cups, leaves, or burlap textures.
 
 **If text renders incorrectly on first attempt:**
 
@@ -36,7 +42,8 @@ Keep everything the same. Fix the text on the bag: the words "DOI CHANG" should 
 
 ### User Input
 
-> Thai boxer after a fight. Not glamorous — real, tired, human. For a magazine editorial.
+> Thai boxer after a fight. Not glamorous — real, tired, human. For a magazine
+> editorial.
 
 ### Output
 
@@ -52,10 +59,14 @@ Lighting: single warm practical light source from upper right — a bare incande
 
 **Risk notes:**
 
-- Sak Yant tattoo is partially covered to reduce complexity — full tattoo rendering can introduce artifacts.
-- Specifying "lean, not exaggerated" prevents the model from defaulting to hyper-muscular stereotypes.
-- Hand wraps are a simpler hand state than bare fists or boxing gloves with lacing, reducing anatomy risk.
-- The strict clause prevents the model from adding a victory context that would contradict the "tired, human" mood.
+- Sak Yant tattoo is partially covered to reduce complexity — full tattoo
+  rendering can introduce artifacts.
+- Specifying "lean, not exaggerated" prevents the model from defaulting to
+  hyper-muscular stereotypes.
+- Hand wraps are a simpler hand state than bare fists or boxing gloves with
+  lacing, reducing anatomy risk.
+- The strict clause prevents the model from adding a victory context that would
+  contradict the "tired, human" mood.
 
 ---
 
@@ -63,17 +74,20 @@ Lighting: single warm practical light source from upper right — a bare incande
 
 ### User Input
 
-> I generated this image of a glass perfume bottle on a marble surface. Problems: the glass looks plastic, the reflection is wrong, and there's a weird second bottle appearing in the background. Here's my original prompt: "A luxury perfume bottle on marble. Beautiful lighting. Elegant."
+> I generated this image of a glass perfume bottle on a marble surface.
+> Problems: the glass looks plastic, the reflection is wrong, and there's a
+> weird second bottle appearing in the background. Here's my original prompt: "A
+> luxury perfume bottle on marble. Beautiful lighting. Elegant."
 
 ### Output
 
 **Diagnosis:**
 
-| Issue | Cause | Fix |
-|---|---|---|
+| Issue               | Cause                                                                                                              | Fix                                                                                                                  |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------- |
 | Glass looks plastic | No refraction, caustic, or internal reflection described. The word "luxury" doesn't teach the model glass physics. | Describe glass behavior: transparency, refraction distortion, internal color, caustic light patterns on the surface. |
-| Wrong reflection | No reflection logic specified. The model guessed. | Describe what the marble surface reflects and how — soft, stretched, partial. |
-| Ghost second bottle | Prompt was too vague, so the model filled negative space with a duplicate. | Add strict adherence clause. Describe the background explicitly. Specify "one bottle only." |
+| Wrong reflection    | No reflection logic specified. The model guessed.                                                                  | Describe what the marble surface reflects and how — soft, stretched, partial.                                        |
+| Ghost second bottle | Prompt was too vague, so the model filled negative space with a duplicate.                                         | Add strict adherence clause. Describe the background explicitly. Specify "one bottle only."                          |
 
 **Revised prompt:**
 
@@ -87,4 +101,7 @@ Lighting: large rectangular softbox directly above and slightly behind the bottl
 90mm macro lens feeling, f/11 depth of field for front-to-back sharpness. Neutral color temperature with a slight warm bias from the gold liquid. Follow these visual requirements exactly. Do not add flowers, fabric, additional bottles, or decorative elements.
 ```
 
-**What changed:** Every problem traced to missing physical description. "Luxury" became material behavior. "Beautiful lighting" became a specific softbox position. "Elegant" became composition and lens choice. The strict clause prevents the ghost duplicate.
+**What changed:** Every problem traced to missing physical description. "Luxury"
+became material behavior. "Beautiful lighting" became a specific softbox
+position. "Elegant" became composition and lens choice. The strict clause
+prevents the ghost duplicate.

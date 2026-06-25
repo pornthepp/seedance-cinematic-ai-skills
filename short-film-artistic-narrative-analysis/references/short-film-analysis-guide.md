@@ -25,8 +25,10 @@ Each scene should do at least one of these:
 
 ## Social and Symbolic Frame
 
-- Identify what the film says about family, class, gender, labor, faith, power, memory, or place.
-- Make the social world visible through behavior and environment, not speeches only.
+- Identify what the film says about family, class, gender, labor, faith, power,
+  memory, or place.
+- Make the social world visible through behavior and environment, not speeches
+  only.
 - Keep characters specific even when they carry symbolic weight.
 - Avoid turning suffering into aesthetic decoration.
 
@@ -42,10 +44,10 @@ Look for:
 
 ## Rewrite Priorities
 
-| Priority | Question | Action |
-|---|---|---|
-| Keep | What is already alive? | Protect it |
-| Cut | What repeats or explains? | Remove or merge |
-| Clarify | What is confusing but important? | Make it visible |
-| Intensify | What is too safe? | Add cost, pressure, or contradiction |
-| Land | What should remain after the film ends? | Sharpen final image/action |
+| Priority  | Question                                | Action                               |
+| --------- | --------------------------------------- | ------------------------------------ |
+| Keep      | What is already alive?                  | Protect it                           |
+| Cut       | What repeats or explains?               | Remove or merge                      |
+| Clarify   | What is confusing but important?        | Make it visible                      |
+| Intensify | What is too safe?                       | Add cost, pressure, or contradiction |
+| Land      | What should remain after the film ends? | Sharpen final image/action           |

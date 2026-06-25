@@ -1,6 +1,7 @@
 # Visual Refinement Loop
 
-Use this after an image exists, or when planning an iterative prompt refinement workflow.
+Use this after an image exists, or when planning an iterative prompt refinement
+workflow.
 
 ## Four-Pass Review
 
@@ -69,7 +70,8 @@ State visible body mechanics:
 
 ### Text
 
-Keep text short. Quote exact words. Specify surface, position, orientation, and whether the text appears once.
+Keep text short. Quote exact words. Specify surface, position, orientation, and
+whether the text appears once.
 
 ### Product
 
@@ -91,4 +93,5 @@ Keep unchanged:
 
 ## Hard Rule
 
-Refine the smallest failing part. Do not rewrite the whole prompt unless the concept itself is wrong.
+Refine the smallest failing part. Do not rewrite the whole prompt unless the
+concept itself is wrong.

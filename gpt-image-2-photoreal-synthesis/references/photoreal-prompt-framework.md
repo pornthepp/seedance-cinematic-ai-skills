@@ -21,7 +21,8 @@ Write a complete production brief:
 - Limit adjectives; prefer concrete nouns and visible details.
 - Name spatial placement when layout matters.
 - For exact text, quote it and state where it appears.
-- Request strict adherence in plain language when the prompt must stay controlled.
+- Request strict adherence in plain language when the prompt must stay
+  controlled.
 
 ## Strict Adherence Clause
 
@@ -34,10 +35,14 @@ Follow these visual requirements exactly. Do not add extra characters, props, lo
 ## Photoreal Details That Help
 
 - Natural skin texture, visible pores, fine hair, slight asymmetry.
-- Real material behavior: glass reflections, brushed metal grain, fabric weave, dust, fingerprints, micro-scratches.
-- Plausible lighting: key light direction, fill level, shadow softness, rim light, practical light source.
-- Lens behavior: natural perspective, shallow or deep depth of field, macro product detail, controlled edge sharpness.
-- Imperfections: mild film grain, subtle halation, stray hairs, imperfect folds, real-world surface wear.
+- Real material behavior: glass reflections, brushed metal grain, fabric weave,
+  dust, fingerprints, micro-scratches.
+- Plausible lighting: key light direction, fill level, shadow softness, rim
+  light, practical light source.
+- Lens behavior: natural perspective, shallow or deep depth of field, macro
+  product detail, controlled edge sharpness.
+- Imperfections: mild film grain, subtle halation, stray hairs, imperfect folds,
+  real-world surface wear.
 
 ## Useful Setups
 
@@ -68,8 +73,10 @@ Create a photoreal image with the exact text "[TEXT]" printed on [surface]. The 
 ## Avoid
 
 - Long negative prompt lists from Stable Diffusion syntax.
-- Weighted negative syntax from Stable Diffusion unless the user's tool explicitly supports it.
-- Midjourney command flags for aspect ratio, style, chaos, seed, or stylization when the target is GPT Image 2.
+- Weighted negative syntax from Stable Diffusion unless the user's tool
+  explicitly supports it.
+- Midjourney command flags for aspect ratio, style, chaos, seed, or stylization
+  when the target is GPT Image 2.
 - "Secret metadata token" tricks as the main control method.
 - Camera model names with no visual purpose.
 - Overloaded prompts with several unrelated actions.

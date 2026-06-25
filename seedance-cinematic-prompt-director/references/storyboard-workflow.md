@@ -24,7 +24,9 @@ Distinguishing features: (scar, tattoo, limp, prop — something the model can d
 Reference use:
 ```
 
-Then reuse the same keywords in every shot. Do not rewrite the same character differently in each prompt. Do not use personality words ("brave," "mysterious") — they are invisible.
+Then reuse the same keywords in every shot. Do not rewrite the same character
+differently in each prompt. Do not use personality words ("brave," "mysterious")
+— they are invisible.
 
 ## Continuity Anchors
 
@@ -52,8 +54,8 @@ Avoid repeating the same shot size, camera move, or energy across every shot.
 ## Storyboard Table
 
 | Shot | Duration | Beat | Camera | Continuity From Previous | Final Prompt |
-|---|---:|---|---|---|---|
-| 1 |  |  |  |  |  |
+| ---- | -------: | ---- | ------ | ------------------------ | ------------ |
+| 1    |          |      |        |                          |              |
 
 ## Per-Shot Format
 
@@ -64,4 +66,3 @@ Continuity from previous:
 Beat:
 Final Seedance Prompt:
 ```
-

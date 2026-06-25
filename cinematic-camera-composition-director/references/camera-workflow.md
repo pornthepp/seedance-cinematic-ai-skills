@@ -22,14 +22,15 @@ Use this when producing a storyboard, shot list, or image/video prompt.
 6. Pick composition.
 7. Pick lens feeling.
 8. Pick movement or stillness.
-9. Add continuity anchors: screen direction, eyeline, lighting, props, emotional state.
+9. Add continuity anchors: screen direction, eyeline, lighting, props, emotional
+   state.
 10. Write the final output in concrete visual language.
 
 ## Storyboard Table
 
 | Shot | Beat | Camera | Composition | Movement | Continuity |
-|---|---|---|---|---|---|
-| 1 |  |  |  |  |  |
+| ---- | ---- | ------ | ----------- | -------- | ---------- |
+| 1    |      |        |             |          |            |
 
 ## Single Image Prompt Format
 
