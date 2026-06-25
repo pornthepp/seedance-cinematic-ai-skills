@@ -24,6 +24,14 @@ Write a complete production brief:
 - Request strict adherence in plain language when the prompt must stay
   controlled.
 
+## Character Posture and Physical Contact
+
+To prevent the AI from generating awkward, slumping, or incorrect character poses (e.g., sliding off furniture or floating):
+
+- **Define Exact Contact Points and Gravity:** Specify exactly what parts of the character's body are touching which surfaces. Use precise physical descriptions (e.g., "lying completely flat on her back on top of the wooden bed" instead of "lying on the bed edge" or "refusing to lie down").
+- **Avoid Psychological or Negative Descriptors for Posture:** AI models do not understand negation or psychological states (e.g., "refusing to lie down"). Translate these intentions into concrete physical postures (e.g., "sitting rigidly upright on the floor, leaning her back against the wooden bed frame").
+- **Specify Joint and Limb Placements:** Describe what the limbs are doing to anchor the pose (e.g., "kneeling on both knees on the dirt floor, with her palms flat on the ground" or "lying flat with arms rested at her sides").
+
 ## Strict Adherence Clause
 
 Use a plain control sentence when the output must stay disciplined:

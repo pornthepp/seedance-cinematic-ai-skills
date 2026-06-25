@@ -42,6 +42,8 @@ specific replacements.
 | "aesthetic / style tags" | Triggers flat AI filters     | Concrete physical properties (lighting direction, depth layers, texture detail)|
 | "heavy color grade"     | Fights the natural lighting | Specific light color temperature + wet reflection details    |
 | "no / never / do not"   | Confuses attention weights  | Describe characters positively; use a short Strict Adherence Clause at the end|
+| "psychological posture" (e.g. "refusing to lie down") | AI cannot render mental resistance | Concrete contact points (e.g., "sitting upright on the floor leaning against the bed frame")|
+| "on the bed / at the edge" | Vague contact, leads to slumping | Precise placement (e.g., "lying completely flat on her back on top of the wooden bed")|
 
 ### The Test
 
