@@ -37,6 +37,8 @@ specific replacements.
 | "4K HDR"                | Resolution tags do nothing  | (delete entirely)                                            |
 | "masterful"             | Decoration                  | (delete entirely)                                            |
 | "breathtaking"          | Decoration                  | (delete entirely)                                            |
+| "studio lighting"       | Fake artificial look        | Practical light from a specific in-scene source (window/lamp)|
+| "beauty light"          | Unmotivated flat lighting   | Hard/soft light from a motivated physical direction          |
 
 ### The Test
 
