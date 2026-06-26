@@ -4,14 +4,19 @@ Use this when building the final image prompt.
 
 ## Six-Part Blueprint
 
-Write a complete production brief:
+Write a complete production brief, integrating instructions from other cinematic skills when appropriate:
 
-1. Subject and action.
-2. Material, surface, body, product, or identity details.
-3. Environment and context.
-4. Lighting setup.
-5. Camera, lens feeling, angle, framing, and composition.
-6. Color, mood, realistic imperfections, and exact text.
+1. **Subject and action:** Describe physical, playable actions, posture, joint/limb contact points, and gaze.
+   * *See: [performance-direction-guide.md](../../modern-acting-performance-mastery/references/performance-direction-guide.md) for character physical behavior, expressions, and posture rules.*
+   * *See: [representation-review-guide.md](../../ethical-character-representation/references/representation-review-guide.md) for gender-safe, historical, and culturally accurate character descriptions.*
+2. **Material, surface, body, product, or identity details:** Textures, wrinkles, skin pores, fabric weave.
+3. **Environment and context:** Time, weather, background depth, atmospheric haze.
+4. **Lighting setup:** Specify motivated light sources (practical lights, windows) rather than abstract modifiers.
+   * *See: [advanced-techniques.md](../../cinematic-color-look-development/references/advanced-techniques.md) for light source setups, three-zone grading, and skin protection.*
+5. **Camera, lens feeling, angle, framing, and composition:** Standard cinematic blocking, shot size, lens millimeter, camera height.
+   * *See: [shot-composition-guide.md](../../cinematic-camera-composition-director/references/shot-composition-guide.md) for standard camera layouts (e.g., over-the-shoulder).*
+   * *See: [advanced-techniques.md](../../cinematic-camera-composition-director/references/advanced-techniques.md) for camera height, depth layers, and blocking rules.*
+6. **Color, mood, realistic imperfections, and exact text:** Film grain, desaturated/restrained color palettes, exact quoted text.
 
 ## Prompt Rules
 
