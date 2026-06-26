@@ -36,7 +36,7 @@ agent loads only when it needs it.
    one.
 3. If it's vague, run `PREFLIGHT_ROUTER.md` to narrow it down — it asks at most
    one question.
-4. Load the skill's `SKILL.md` and follow the workflow.
+4. Load the skill's \`GUIDE.md\` and follow the workflow.
 5. If the task needs more depth, open a specific reference file — never load
    everything at once.
 
@@ -45,13 +45,20 @@ agent loads only when it needs it.
 Every skill folder has the same structure:
 
 ```text
-skill-name/
-  SKILL.md              ← Start here. Short workflow + quality gate.
-  references/
-    core-guide.md       ← Vocabulary, checklists, review tables
-    examples.md         ← Full input → output worked examples
-    model-quirks.md     ← Model-specific tips (GPT Image 2 / Seedance only)
-    advanced-techniques.md  ← Professional-level depth
+skills/
+  SKILL_INDEX.md        ← Start here. Pick the right skill for the task.
+  PREFLIGHT_ROUTER.md   ← Use when the request is vague or crosses domains.
+  EVAL_PROMPTS.md       ← Test prompts to verify routing is correct.
+  skill-name/
+    GUIDE.md            ← Skill entry point. Frontmatter + workflow + quality gate.
+    LICENSE.txt         ← Apache 2.0
+    templates/
+      output-template.md  ← Blank output to fill in
+    references/
+      core-guide.md       ← Vocabulary, checklists, review tables
+      examples.md         ← Full input → output worked examples
+      model-quirks.md     ← Model-specific tips (GPT Image 2 / Seedance only)
+      advanced-techniques.md  ← Professional-level depth
 ```
 
 Not every skill has every reference type. Here's what's available:
@@ -69,11 +76,11 @@ Not every skill has every reference type. Here's what's available:
 
 ## Quick Start
 
-**If you're an AI agent:** Read `SKILL_INDEX.md` first. It tells you which skill
+**If you're an AI agent:** Read `skills/SKILL_INDEX.md` first. It tells you which skill
 to load for any given task. Only open references when the task needs them.
 
-**If you're a human:** Browse any `SKILL.md` for a quick creative checklist.
-Check `references/examples.md` for full demonstrations of what each skill
+**If you're a human:** Browse any `skills/[skill-name]/GUIDE.md` for a quick creative checklist.
+Check `skills/[skill-name]/references/examples.md` for full demonstrations of what each skill
 produces.
 
 ## Installation
