@@ -33,10 +33,9 @@ Start here. Read only the reference that matches the task:
    and realism details. **Consult sibling cinematic skills (composition, color look development, acting performance, ethical representation) to ensure professional cinematic control.**
 3. Write the prompt as a production brief, not tag soup.
 4. Use positive constraints: say exactly what should appear, where, and how.
-5. Avoid Stable Diffusion and Midjourney-specific syntax unless the user
-   explicitly switches pipelines.
-6. If reviewing an image result, revise only the failing visual parts of the
-   prompt.
+5. If reference images are used, apply the Ref-over-Text Rule: map filenames to placeholders in a `REFERENCE INPUTS` block, provide a cinematic photoreal style override, and ensure the prompt only describes actions or changes without repeating/contradicting what is in the reference.
+6. Avoid Stable Diffusion and Midjourney-specific syntax unless the user explicitly switches pipelines.
+7. If reviewing an image result, revise only the failing visual parts of the prompt.
 
 ## Output Shape
 
@@ -53,6 +52,4 @@ Read `templates/image-prompt.md` first. Fill in the skeleton and each field:
 
 ## Quality Gate
 
-The prompt should be filmable, physically plausible, and specific. Do not
-promise unsupported controls. Do not rely on "secret tokens" or model folklore
-when an explicit visual instruction is clearer.
+The prompt should be filmable, physically plausible, specific, and strictly follow the Ref-over-Text Rule (ensuring no text-to-reference conflicts, proper style override block, and placeholder mapping). Do not rely on "secret tokens" or model folklore when an explicit visual instruction is clearer.

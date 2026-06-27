@@ -37,6 +37,67 @@ To prevent the AI from generating awkward, slumping, or incorrect character pose
 - **Avoid Psychological or Negative Descriptors for Posture:** AI models do not understand negation or psychological states (e.g., "refusing to lie down"). Translate these intentions into concrete physical postures (e.g., "sitting rigidly upright on the floor, leaning her back against the wooden bed frame").
 - **Specify Joint and Limb Placements:** Describe what the limbs are doing to anchor the pose (e.g., "kneeling on both knees on the dirt floor, with her palms flat on the ground" or "lying flat with arms rested at her sides").
 
+## The Ref-over-Text Rule (Reference Precedence)
+
+### Core Principle
+The reference image controls all **physical details** (structure, geography, and appearance). The text prompt should only specify actions, camera directions, lighting, or details that the reference image cannot convey. GPT Image 2 is an autoregressive model; if the text prompt contradicts or over-describes details present in the reference image, the model prioritizes the text description. This overrides the reference, leading to identity drift, environment mismatch, and style copying.
+
+### Reference Controls (Do NOT repeat or describe in text)
+- **Structure, Materials & Architecture:** e.g., stone walls, wood, bamboo, roof, arched stone doorway.
+- **Environment & Geography:** e.g., jungle, river, mountain, dock, specific trees.
+- **Color Palette & Tonal Range:** e.g., overall hue bias, saturation logic.
+- **Character Attributes & Identity:** e.g., face, hair style/color, skin tone, body proportions, clothing/armor.
+- **Textures & Surface Finishes:** e.g., scales, leather, fabric weave, steel plates.
+
+### Text Prompt Controls (What references cannot do)
+- **Pose, Action & Blocking:** e.g., kneeling, sitting, running.
+- **Camera Settings & Composition:** e.g., shot size, camera height, lens millimeter, camera angle.
+- **Lighting Direction & Quality:** e.g., key light direction, shadow sharpness (hard vs. soft shadow edges).
+- **Atmospheric/Weather Effects:** e.g., rain, wind, mist not visible in the reference.
+- **Performance & Expression:** e.g., looking astonished, breathing heavily, smiling.
+- **Hands & Anatomy Correction:** e.g., specifying hand placement and finger count to prevent AI hand anomalies.
+- **Style Override:** If the reference is a 2D illustration or CGI render, but the project requires cinematic photorealism, you *must* explicitly force a style override in the prompt.
+
+### Style Override Protocol (Critical for Photorealism)
+When using reference images that are illustrations, 2D art, or CGI renders, GPT Image 2 will incorrectly copy the rendering style instead of producing a photorealistic image. To prevent this, you **must** include the following override text in your reference inputs:
+
+```text
+References define physical details only — face, body, costume, structure, proportions.
+Do NOT copy the rendering style or art style from the references.
+Render all panels as cinematic photorealistic — as if shot on 35mm film
+with a real camera, real skin, real fabric, real light.
+Not illustration, not digital painting, not 2D, not CGI render.
+```
+
+### Formatting REFERENCE INPUTS
+In the prompt generation phase, structure the reference declaration block exactly as follows:
+
+```text
+REFERENCE INPUTS:
+[filename.jpg] = {placeholder_name}
+References define physical details only — face, body, costume, structure, proportions.
+Do NOT copy the rendering style or art style from the references.
+Render all panels as cinematic photorealistic — as if shot on 35mm film
+with a real camera, real skin, real fabric, real light.
+Not illustration, not digital painting, not 2D, not CGI render.
+```
+- **Line 1:** Map the filename to its descriptive placeholder (e.g., `image1.jpg = {warrior_armor}`).
+- **Subsequent lines:** Apply the global constraints and style override.
+- **Specific roles:** If references serve distinct purposes, add concise roles:
+  `{warrior_armor} defines the battle robe being removed.`
+
+### Strict Rules (Avoid Overriding)
+- **No Material Redundancy:** Do not describe materials already depicted in the reference (e.g., do not write "bamboo walls" when the reference clearly shows stone walls).
+- **No Environmental Redundancy:** Do not describe environments already depicted in the reference (e.g., do not write "dark jungle" when the reference clearly shows a river bank).
+- **No Attire/Feature Redundancy:** Do not repeat character features (face, hair, attire) unless they change state relative to the reference (e.g., write "battle robe removed" only if the reference is wearing it).
+
+### Referencing Reference Images (Referencing Protocol)
+If you must refer to an element shown in the reference image, use minimal text and cite the placeholder directly:
+- **Correct:** "the hut as shown in {hut_ref}"
+- **Incorrect:** "a small hut built into a massive tree covered in flowering vines with a stone arched doorway..."
+- **Correct:** "Inside {hut_ref}"
+- **Incorrect:** "Inside a dark bamboo hut with rough wooden walls and a dirt floor..."
+
 ## Strict Adherence Clause
 
 Use a plain control sentence when the output must stay disciplined:
